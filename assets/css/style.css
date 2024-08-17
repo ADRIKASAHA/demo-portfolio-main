@@ -131,6 +131,7 @@ img {
 }
 
 
+
 /* SECTION TITLE */
 .section-title {
     margin-bottom: 60px;
@@ -206,7 +207,7 @@ img {
 
 /* COUNTER */
 #counter {
-    background: linear-gradient(rgba(var(--c-brand-rgb), 0.8), rgba(var(--c-brand-rgb), 0.8)), url(../images/counter.jpg);
+    background: linear-gradient(rgba(var(--c-brand-rgb), 0.8), rgba(var(--c-brand-rgb), 0.8)), url(../images/Asit-Paul-png.png);
     background-position: center;
     background-size: cover;
 }
