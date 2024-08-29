@@ -106,6 +106,7 @@ header .menu {
 
 .slider .list .item.active p:nth-child(1),
 .slider .list .item.active h2,
+.slider .list .item.active .round-button,
 .slider .list .item.active p:nth-child(3) {
     transform: translateY(30px);
     filter: blur(20px);
@@ -188,6 +189,32 @@ header .menu {
     inset: auto 10px 10px 10px;
 }
 
+/* Round Button Styles */
+.round-button {
+    background-color: #346868; /* Customize as needed */
+    color: #fff;
+    border: none;
+    width: 10rem;
+    height: 50px;
+    border-radius: 1.5rem;
+    font-size: 18px;
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    
+}
+
+.round-button:hover {
+    background-color: #2e2a60; /* Darken on hover */
+    transform: scale(1.1); /* Slightly increase size on hover */
+}
+
+
+
 /* Responsive Styles */
 
 @media screen and (max-width: 1024px) {
@@ -208,7 +235,7 @@ header .menu {
         grid-template-columns: 40px 1fr 40px;
     }
     header .menu {
-        gap: 10px; /* Reduce gap between menu items on mobile */
+        gap: 20px; /* Reduce gap between menu items on mobile */
     }
     .slider .list .item .content {
         left: 5%; /* Adjust content position on mobile */
@@ -244,5 +271,21 @@ header .menu {
     .thumbnail .item {
         width: 80px; /* Further reduce thumbnail item size */
         height: 120px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .round-button {
+        width: 50px;
+        height: 50px;
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .round-button {
+        width: 70px;
+        height: 50px;
+        font-size: 10px;
     }
 }
